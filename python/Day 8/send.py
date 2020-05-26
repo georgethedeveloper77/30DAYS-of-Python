@@ -18,7 +18,6 @@ def send(name, website=None, verbose=False):
   else:
     return "There was an error"
 
-
 if __name__ == "__main__":
   print(sys.argv)
   name = "Unknown"
