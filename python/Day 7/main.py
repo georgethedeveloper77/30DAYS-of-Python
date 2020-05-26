@@ -12,15 +12,12 @@ def format_msg(my_name="Justin", my_website="cfe.sh"):
   # print(msg_template)
   return my_msg
 
-
-
   """
 "{} {}".format("abc", 123)
 "{1} {0}".format("abc", 123)
 "{name} {number}".format(name="abc", number=123)
 "{} {name} {number}".format("another", name="abc", number=123)
 """
-
 
 def base_function(*args, **kwargs):
   print(args, kwargs)
