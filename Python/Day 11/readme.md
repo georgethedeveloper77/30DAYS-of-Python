@@ -1,4 +1,4 @@
-## sheet
+## Classes...maintain state....
 # python -i animals.py
 
 >>> Animal
