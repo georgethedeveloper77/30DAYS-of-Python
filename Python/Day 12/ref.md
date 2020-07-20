@@ -25,3 +25,14 @@
 python -i scrape.py
 [<Element 'div' id='table' class=('a-section', 'imdb-scroll-table', 'mojo-gutter')>]
 >>> 
+
+# python -m pip install pandas ~~python3~~
+* csv files
+* this tutorial is to save files
+
+## python scrape.py 2005 5  
+* this is passing start n duration
+
+# pip install requests-html
+
+# python scrape.py 2020 30

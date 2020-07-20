@@ -2,24 +2,27 @@ import os
 import sys
 import datetime
 import requests
-import pandas as pd
+import pandas as pd  # conevrt dict to data
 from requests_html import HTML
 
 BASE_DIR = os.path.dirname(__file__)
 # scrapes and stores data
-#def url_to_file(url, filename="world.html"):
+# def url_to_file(url, filename="world.html"):
+
+
+# 1> save data...and pass it later
 def url_to_txt(url, filename="world.html", save=False):
     r = requests.get(url)
     if r.status_code == 200:
         html_text = r.text
-        if save:
-            with open(f"world-{year}.html", 'w') as f:
+        if save:    #open(f"..)
+            with open("world-{year}.html", 'w') as f: 
                 f.write(html_text)
         return html_text
     return None
 
 
-
+# parse and extract ,,,html and css ... pass coreect tool
 def parse_and_extract(url, name='2020'):
     html_text = url_to_txt(url)
     if html_text == None:
@@ -50,7 +53,7 @@ def parse_and_extract(url, name='2020'):
             header_name = header_names[i]
             # row_dict_data[header_name] = col.text
             row_data.append(col.text)
-        table_data_dicts.append(row_dict_data)
+        #table_data_dicts.append(row_dict_data)  this was there original
         table_data.append(row_data)
     df = pd.DataFrame(table_data, columns=header_names)
     # df = pd.DataFrame(table_data_dicts)
@@ -60,31 +63,33 @@ def parse_and_extract(url, name='2020'):
     df.to_csv(filepath, index=False)
     return True
 
-def run(start_year=None, years_ago=0):
+# scrape multple things not just once
+
+
+def run(start_year=None, years_ago=0):  # take years ago...change to one
     if start_year == None:
         now = datetime.datetime.now()
         start_year = now.year
     assert isinstance(start_year, int)
     assert isinstance(years_ago, int)
-    assert len(f"{start_year}") == 4
-    for i in range(0, years_ago+1):
+    assert len(f"{start_year}") == 4  # 4 digits year
+    for i in range(0, years_ago+1):  # with this loop
         url = f"https://www.boxofficemojo.com/year/world/{start_year}/"
         finished = parse_and_extract(url, name=start_year)
         if finished:
-            print(f"Finished {start_year}")
+            print(f"Finished {start_year}")  # turn it into string
         else:
             print(f"{start_year} not finished")
-        start_year -= 1
-
+        start_year -= 1  # starts with initial start year n substracts one
 
 
 if __name__ == "__main__":
     try:
-        start = int(sys.argv[1])
+        start = int(sys.argv[1])  # pass argurments with sys
     except:
         start = None
     try:
         count = int(sys.argv[2])
     except:
-        count = 0
-    run(start_year=start, years_ago=count)
+        count = 0   # goes one number...
+    run(start_year=start, years_ago=count)  #
