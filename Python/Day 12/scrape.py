@@ -16,7 +16,7 @@ def url_to_txt(url, filename="world.html", save=False):
     if r.status_code == 200:
         html_text = r.text
         if save:    #open(f"..)
-            with open("world-{year}.html", 'w') as f: 
+            with open("world-{year}.html", 'w') as f:
                 f.write(html_text)
         return html_text
     return None
