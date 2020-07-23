@@ -1,3 +1,5 @@
+# Files - Create, Read & Download
+
 In general, to create or retrieve a file on your local system you must use the `open` command. Open has a few different "modes" so let's go through them now.
 
 ## 1 Create a file with the `w` mode
