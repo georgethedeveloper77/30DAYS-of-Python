@@ -12,9 +12,9 @@
 - [audio.mp3](https://github.com/codingforentrepreneurs/30-Days-of-Python/raw/master/tutorial-reference/Day%2015/data/samples/inputs/audio.mp3)
 - [sample.mp4](https://github.com/codingforentrepreneurs/30-Days-of-Python/raw/master/tutorial-reference/Day%2015/data/samples/inputs/sample.mp4)
 
-* python -i one_thumbs.py
+* python -i 1_thumbs.py
 numpy array => all that data machine learning and computer vision
 
 * pipenv install pillow
 turn numpy array into image
-* python one_thumbs.py
+* python 1_thumbs.py
