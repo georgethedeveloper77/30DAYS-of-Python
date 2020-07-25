@@ -18,7 +18,7 @@ original_audio = video_clip.audio
 original_audio.write_audiofile(og_audio_path)
 
 background_audio_clip = AudioFileClip(source_audio_path)
-#
+
 w, h = video_clip.size
 fps = video_clip.fps
 
@@ -54,5 +54,5 @@ og_audio = AudioFileClip(og_audio_path)
 overlay_clip = overlay_clip.set_audio(og_audio)
 
 
-final_clip = concatenate_videoclips([intro_text, overlay_clip]) #this joins them together
+final_clip = concatenate_videoclips([intro_text, overlay_clip])
 final_clip.write_videofile(final_video_path, codec='libx264', audio_codec="aac")
