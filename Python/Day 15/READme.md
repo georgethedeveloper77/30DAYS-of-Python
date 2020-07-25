@@ -18,3 +18,5 @@ numpy array => all that data machine learning and computer vision
 * pipenv install pillow
 turn numpy array into image
 * python 1_thumbs.py
+* python 2_dir_to_vid.py
+* python 3_create_gif.py
