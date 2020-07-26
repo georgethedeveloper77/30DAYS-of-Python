@@ -20,11 +20,15 @@ Binary image = Black n white
 Color image = RGB
 
 **Chapter 1**
-Read Images-Videos-Webcam
-line 5 #adds a delay n waits for keyword press
+1.Read Images-Videos-Webcam
+2.line 5 #adds a delay n waits for keyword press
 
 **Chapter 2**
-Run Image to diff colors => blur
+1. Run Image to diff colors => blur
+2. line 7=> cvtcolor changes color
+3. canny => looks black find img edge
+4. Dialation => kernel-numpy, iterations(thickeness)
+
 **Chapter 3**
 
 **Chapter 4**
