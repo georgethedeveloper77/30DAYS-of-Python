@@ -34,6 +34,9 @@ Resizing and cropping
 opencv convenction => x +ve west and y axis... +ve y axis towards the south
 
 **Chapter 4**
+shapes and images
+0 = black
+start point, endpoint, color, thickness. cv0filled
 
 **Chapter 5**
 
