@@ -30,6 +30,8 @@ Color image = RGB
 4. Dialation => kernel-numpy, iterations(thickeness)
 
 **Chapter 3**
+Resizing and cropping
+opencv convenction => x +ve west and y axis... +ve y axis towards the south
 
 **Chapter 4**
 
