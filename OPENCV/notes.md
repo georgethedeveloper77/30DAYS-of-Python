@@ -39,6 +39,10 @@ shapes and images
 start point, endpoint, color, thickness. cv0filled
 
 **Chapter 5**
+wrap Perspective
+card => 2.5, 3.5
+1. needs 4 diff points(pts) => card[arry]..
+matrix => cv2.PerspectiveTransform
 
 **Chapter 6**
 
