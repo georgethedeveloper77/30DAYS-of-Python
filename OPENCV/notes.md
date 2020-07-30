@@ -3,7 +3,7 @@
 3. resizing and cropping
 4. shapes and text
 5. warp prespective
-6. joining imagescolor detention
+6. joining images...=>color detention
 7. contour / shape detention
 8. Face detention
 
@@ -45,8 +45,15 @@ card => 2.5, 3.5
 matrix => cv2.PerspectiveTransform
 
 **Chapter 6**
+joining images
+o can stack vertical or horizontal
+stacking demerits => rgb , cant resize
 
 **Chapter 7**
+
+**Chapter 8**
+
+**Chapter 9**
 
 **Project 1**
 
