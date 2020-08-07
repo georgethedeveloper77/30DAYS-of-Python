@@ -3,9 +3,10 @@
 3. resizing and cropping
 4. shapes and text
 5. warp prespective
-6. joining images...=>color detention
-7. contour / shape detention
-8. Face detention
+6. joining images...=>
+7. color detention
+8. contour / shape detention
+9. Face detention
 
 **Projects**
 
